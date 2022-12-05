@@ -19,12 +19,10 @@ namespace WebApiFilter.Filters
             {
                 var controllerName = controllerDescriptor.ControllerName;
                 var actionName = controllerDescriptor.ActionName;
-                //var MethodName = controllerDescriptor.MethodInfo;
               
 
                 context.HttpContext.Response.Headers["Controller-Name"] = controllerName;
                 context.HttpContext.Response.Headers["Action-Name"] = actionName;
-              //  context.HttpContext.Response.Headers["Method-Name"] = MethodName.Name;
             }
 
             var method = context.HttpContext.Request.Method;

@@ -20,7 +20,7 @@ namespace Cpm.Web.Api.Controllers
         // GET: api/<HelloController>
         [ServiceFilter(typeof(OtherFilters), Order = 1)]
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<string> Getlist()
         {
             Thread.Sleep(1000);
             return new string[] { "value1", "value2" };
